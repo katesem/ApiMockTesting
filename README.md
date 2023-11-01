@@ -1,1 +1,3 @@
-This project I created to have some experience with Gradle and Wiremock.
+I created this project to gain experience with Gradle and WireMock for API testing.
+
+This project focuses on testing the SWAPI (Star Wars API): https://swapi.dev/documentation <br>
