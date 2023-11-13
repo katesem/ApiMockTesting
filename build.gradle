@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id("io.qameta.allure") version "2.11.2"
 }
 
 group 'org.example'
@@ -12,11 +13,13 @@ repositories {
 dependencies {
     implementation 'com.github.tomakehurst:wiremock:2.27.2'
     implementation 'io.rest-assured:rest-assured:5.3.0'
-    testImplementation 'org.testng:testng:7.7.0'
+    implementation 'org.testng:testng:7.7.0'
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
 }
 
 test {
-    useTestNG() { //Tells Gradle to use TestNG
-        useDefaultListeners = true // Tells TestNG to execute its default reporting structure
+    useTestNG() {
+        useDefaultListeners = true
     }
 }
